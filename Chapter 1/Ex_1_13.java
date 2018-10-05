@@ -1,5 +1,5 @@
 /*
-Athor: Cole Buehler
+Author: Cole Buehler
 Date 10/3/2018
 
 Output result of a equation with variables
