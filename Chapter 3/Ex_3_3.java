@@ -6,6 +6,7 @@ Uses Cramer's Rule to solve linear expressions
 */
 import java.util.Scanner;
 
+class Ex_3_3 {
 	public static void main(String[] args) {
 		// Declare variables
 		Scanner input = new Scanner(System.in);
