@@ -11,14 +11,14 @@ class Ex_3_19 {
 		Scanner input = new Scanner(System.in);
 
 		// Prompt user
-		System.out.println("Enter three edges for a triangle:");
-		System.out.print(" Edge 1 points x, y: ");
+		System.out.println("Enter three edges for a triangle (Sepeated by spaces):");
+		System.out.print(" Enter edge 1 points x, y: ");
 		double x1 = input.nextDouble();
 		double y1 = input.nextDouble();
-		System.out.print(" Edge 2 points x, y: ");
+		System.out.print(" Enter edge 2 points x, y: ");
 		double x2 = input.nextDouble();
 		double y2 = input.nextDouble();
-		System.out.print(" Edge 3 points x, y: ");
+		System.out.print(" Enter edge 3 points x, y: ");
 		double x3 = input.nextDouble();
 		double y3 = input.nextDouble();
 
@@ -29,11 +29,11 @@ class Ex_3_19 {
 
 		if (!valid)
 		{
-			System.out.println("Input is invalid.");
+			System.out.println("Input is not valid.");
 			System.exit(1);
 		}
 
-		// The actuall math part
+		// The actual math part
 		double side1 = Math.pow(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2), 0.5);
 		double side2 = Math.pow(Math.pow(x3 - x2, 2) + Math.pow(y3 - y2, 2), 0.5);
 		double side3 = Math.pow(Math.pow(x1 - x3, 2) + Math.pow(y1 - y3, 2), 0.5);
