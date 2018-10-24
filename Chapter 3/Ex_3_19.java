@@ -32,4 +32,5 @@ public class Ex_3_19 {
 
 		// Calculating and telling user result
 		System.out.println("perimeter of triangle is " + (side1 + side2 + side3));
+		}
 }
