@@ -22,8 +22,12 @@ public class Ex_3_19 {
 				
 				// Test if input is valid
 				boolean valid = (side1 > side3 && side2 > side3) ||
-											 (side1 > side2 && side3 > side2) ||
-											 (side3 > side1 && side2 > side1);
+				boolean valid = (side1 + side2 > side3) &&
+				(side1 + side3 > side2) &&
+				(side2 + side1 > side3) &&
+				(side2 + side3 > side1) &&
+				(side3 + side1 > side2) &&
+				(side3 + side2 > side1);
 		if (!valid)
 		{
 			System.out.println("Input is invalid.");
@@ -32,5 +36,6 @@ public class Ex_3_19 {
 
 		// Calculating and telling user result
 		System.out.println("perimeter of triangle is " + (side1 + side2 + side3));
-		}
+		
+	}
 }
