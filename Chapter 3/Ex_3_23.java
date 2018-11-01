@@ -19,6 +19,14 @@ class Ex_3_23 {
 		double pointy = input.nextDouble();
 		
 		//Test if points are in the rectangle
+		boolean withinRectangle = (Math.pow(Math.pow(pointx, 2), 0.5) <= 10 / 2 ) &&
+												  (Math.pow(Math.pow(pointy, 2), 0.5) <= 5.0 / 2 ) &&
+												(Math.pow(Math.pow(pointx, 2), 0.5) >= -10 / 2 ) &&
+													 (Math.pow(Math.pow(pointy, 2), 0.5) >= -5.0 / 2);
+													
+		//Tell user result
+		System.out.println("Point (" + pointx + ", " + pointy + ") is " +
+			((withinRectangle) ? "in " : "not in ") + "the rectangle");
 	
 		
 	}
